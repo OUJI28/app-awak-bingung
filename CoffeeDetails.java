@@ -16,7 +16,7 @@ import com.google.android.material.imageview.ShapeableImageView;
 public class CoffeeDetails extends AppCompatActivity {
 
 	ShapeableImageView mainimage, attr1img, attr2img, food1img, food2img;
-	TextView city, description, duration, timetovisit, attr1name, attr1des, attr2name, attr2des, food1name, food1des, food2name, food2des, lokasi, rating;
+	TextView city, description, duration, timetovisit, attr1name, attr1des, attr2name, attr2des, food1name, food1des, food2name, food2des, lokasi, rating, pricerange, category;
 	Button locationbtn;
 	String location;
 
@@ -71,7 +71,7 @@ public class CoffeeDetails extends AppCompatActivity {
       timetovisit.setText("October to Mwarch");
       duration.setText("Location");
       mainimage.setImageResource(R.drawable.roemah_pohon);
-      rating.setText("");
+      rating.setText("Rating \n9.0(250 Reviews)");
     }
     if (city_str.equals("Cetro")) {
       city.setText("Cetro");
@@ -147,29 +147,29 @@ public class CoffeeDetails extends AppCompatActivity {
       rating.setText("gawat terkeren");
     }
 
-    if (city_str.equals("SUNMOFFEE")) {
-      city.setText("SUNMOFFEE");
-      attr1name.setText("dasdas");
-      attr2name.setText("asdas");
-      attr1des.setText("asdasda.");
-      attr2des.setText("sdasdasdn.");
+    if (city_str.equals("Luar Garis")) {
+      city.setText("Luar Garis");
+      lokasi.setText("Batam Kota");
+      attr1name.setText("Cetroo Coffee");
+      attr2name.setText("Lintas Coffee");
+      attr1des.setText("Batam Kota");
+      attr2des.setText("Batam Kota");
       attr1img.setImageResource(R.drawable.amatipng);
       attr2img.setImageResource(R.drawable.amatipng);
-      food1name.setText("asdas");
-      food2name.setText("sadas");
-      food1des.setText("Tsdssd.");
-      food2des.setText("A very popular dish mainly eaten with makke ki roti");
+      food1name.setText("----");
+      food2name.setText("----");
+      food1des.setText("----");
+      food2des.setText("----");
       food1img.setImageResource(R.drawable.amatipng);
       food2img.setImageResource(R.drawable.amatipng);
       description.setText(
-              "A very popular city among tourists. Famous attractions of amritsar are Golden Temple, Wagah Border etc.");
+              "Coffee Shop yang berisikan hidangan ");
       location =
               "<iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15956.045089018658!2d104.1284838!3d1.1524394!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x73ab5d93ef9c57fe!2sRoemah%20Pohon!5e0!3m2!1sen!2sid!4v1661404167976!5m2!1sen!2sid\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>";
-      timetovisit.setText("November to March");
-      duration.setText("2 Days");
+      timetovisit.setText("4PM to 11PM");
+      duration.setText("Location");
       mainimage.setImageResource(R.drawable.amatipng);
-      rating.setText("Rating \n4.4 (286 Reviews");
-      rating.setText("gawat terkeren");
+      rating.setText("Rating \n4.7 (134 Reviews");
     }
 
     if (city_str.equals("SUNMOFFEE")) {
@@ -196,6 +196,31 @@ public class CoffeeDetails extends AppCompatActivity {
       rating.setText("Rating \n4.4 (286 Reviews");
       rating.setText("gawat terkeren");
     }
+      if (city_str.equals("SUNMOFFEE")) {
+      city.setText("SUNMOFFEE");
+      attr1name.setText("dasdas");
+      attr2name.setText("asdas");
+      attr1des.setText("asdasda.");
+      attr2des.setText("sdasdasdn.");
+      attr1img.setImageResource(R.drawable.amatipng);
+      attr2img.setImageResource(R.drawable.amatipng);
+      food1name.setText("asdas");
+      food2name.setText("sadas");
+      food1des.setText("Tsdssd.");
+      food2des.setText("A very popular dish mainly eaten with makke ki roti");
+      food1img.setImageResource(R.drawable.amatipng);
+      food2img.setImageResource(R.drawable.amatipng);
+      description.setText(
+              "A very popular city among tourists. Famous attractions of amritsar are Golden Temple, Wagah Border etc.");
+      location =
+              "<iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15956.045089018658!2d104.1284838!3d1.1524394!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x73ab5d93ef9c57fe!2sRoemah%20Pohon!5e0!3m2!1sen!2sid!4v1661404167976!5m2!1sen!2sid\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>";
+      timetovisit.setText("November to March");
+      duration.setText("2 Days");
+      mainimage.setImageResource(R.drawable.amatipng);
+      rating.setText("Rating \n4.4 (286 Reviews");
+      rating.setText("gawat terkeren");
+    }
+      
 
 
     locationbtn.setOnClickListener(
